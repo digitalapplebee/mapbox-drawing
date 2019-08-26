@@ -1,0 +1,12 @@
+.calculation-box {
+  height: 60px;
+  width: 300px;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  background-color: rgba(77, 77, 77, 0.767);
+  padding: 15px;
+  text-align: center;
+  color: rgb(225, 225, 225);
+  border-radius: 10px;
+}
