@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mapbox drawing",
+  "name": "Mapbox drawing",
   "icons": [
     {
       "src": "favicon.ico",

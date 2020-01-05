@@ -74,6 +74,7 @@ function App() {
   return (
     <div>
       <Map
+        // eslint-disable-next-line
         style="mapbox://styles/mapbox/dark-v9"
         containerStyle={{
           height: "100vh",
