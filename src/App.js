@@ -34,6 +34,7 @@ const draw = new MapboxDraw({
 
 function App() {
   const [square, setSquare] = useState(0);
+  const mapboxStyleURL = 'mapbox://styles/mapbox/dark-v9';
 
   const updateArea = () => {
     let data = draw.getAll();
@@ -45,6 +46,7 @@ function App() {
       } else {
         area = turf.area(data);
       }
+
       let rounded_area = Math.round(area * 100) / 100;
       setSquare(rounded_area);
     } else {
@@ -75,13 +77,14 @@ function App() {
     <div>
       <Map
         // eslint-disable-next-line
-        style="mapbox://styles/mapbox/dark-v9"
+        style={mapboxStyleURL}
         containerStyle={{
           height: "100vh",
           width: "100vw"
         }}
         onStyleLoad={handleMapLoaded}
         onDrawUpdate={updateArea}
+        center={[27.567444, 53.893009]}
         zoom={[14]}
       />
       <div className="control-box">
