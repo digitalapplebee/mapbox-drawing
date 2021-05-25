@@ -1,15 +1,17 @@
-import React from "react";
+import React from 'react';
+import { ONE_THOUSAND } from '../../utils/constants';
+import { setSquareFormat } from '../../utils'
 import "./index.css";
 
 function CalcBox({ square }) {
 
   const convertMtoKM = () => {
-    return (square / 1000).toFixed(3);
+    return setSquareFormat((square / ONE_THOUSAND));
   };
 
   return (
     <div className="calculation-box">
-      <p>Square figures: {convertMtoKM()} km</p>
+      <p>Area of figures: {convertMtoKM()} km</p>
     </div>
   );
 }
